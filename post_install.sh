@@ -3,10 +3,10 @@
 # update & upgrade 
 sudo apt-get -y update
 #sudo apt-get -y upgrade
-sudo apt-get -y autoremove
+#sudo apt-get -y autoremove
 
 #Install Thai language
-sudo apt-get install -y fonts-thai-tlwg-ttf
+#sudo apt-get install -y fonts-thai-tlwg-ttf
 
 #Install gzip
 sudo apt-get install -y gzip
@@ -18,7 +18,7 @@ sudo apt-get install -y nginx
 sudo apt-get install -y curl
 
 #install NodeJS
-sudo apt-get update
+#sudo apt-get update
 sudo apt-get install -y ca-certificates curl gnupg
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
@@ -26,7 +26,7 @@ curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg 
 NODE_MAJOR=20
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 
-sudo apt-get update
+#sudo apt-get update
 sudo apt-get install nodejs -y
 
 #Install PM2
